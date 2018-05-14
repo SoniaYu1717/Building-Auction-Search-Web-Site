@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS itemlocation(
+	ItemID INTEGER NOT NULL,
+	ItemGeo POINT NOT NULL,
+	SPATIAL INDEX(ItemGeo),
+	PRIMARY KEY (ItemID, ItemGeo),
+	FOREIGN KEY (ItemID) REFERENCES Item(ItemID)
+	) ENGINE=MyISAM;
+
+INSERT INTO itemlocation (ItemID, ItemGeo)
+SELECT ItemID, POINT(Latitude, Longitude)
+FROM Item
+WHERE Latitude IS NOT NULL AND Longitude IS NOT NULL;
