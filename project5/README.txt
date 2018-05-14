@@ -1,0 +1,1 @@
+topUsers.scala is the main Scala code to compute the top Twitter users. This code should be executable simply by typing "spark-shell -i topUsers.scala".
