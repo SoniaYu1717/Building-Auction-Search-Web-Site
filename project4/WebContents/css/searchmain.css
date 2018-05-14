@@ -1,0 +1,41 @@
+h1 {
+    color: black;
+    text-align: center;
+    font-family: verdana;
+    font-size: 20px;
+}
+
+.head1 {
+    color: black;
+    text-align: center;
+    padding-top:50px;
+    font-family: fantasy;
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+
+a:hover {
+    color: skyblue;
+}
+
+input[type=text] {
+    font-family: verdana;
+    font-size: 15px;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    width: 800px;
+}
+
+input[type=submit] {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 15px;
+}
